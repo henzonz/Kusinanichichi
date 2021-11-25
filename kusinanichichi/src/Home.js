@@ -5,24 +5,6 @@ import Logo from './assets/img/logo.jpg'
 const Home = () => {
     return (
         <div className="page">
-            <nav className="navbar bg-dark fixed-top">
-                <a className="navbar-brand" href="#"><img className="rounded-circle" src={Logo} style={{ height: '45px', width: '45px' }} /></a>
-
-                <div className="">
-                    <ul className="navbar-nav d-flex flex-row">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Menu">Menu</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
                 <div>IS THIS OWKRING?!</div>
                 <div>IS THIS OWKRING?!</div>
                 <div>IS THIS OWKRING?!</div>

@@ -2,5 +2,15 @@
     padding-top: 70px;
 }
 .food_options{
-    padding-top: 20vh;
+    padding-top: 10vh;
+}
+.food_cards{
+    margin:auto;
+}
+.menu_writing{
+    font-size: 0.895rem !important;
+}
+.food_options{
+    
+
 }
