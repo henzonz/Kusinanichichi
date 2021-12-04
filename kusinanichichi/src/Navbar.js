@@ -8,8 +8,8 @@ import './assets/css/Nav.css'
 function Navbar() {
     return (
         <div>
-            <nav className="navbar bg-dark fixed-top">
-                <a className="navbar-brand" href="/"><img className="rounded-circle" src={Logo} style={{ height: '45px', width: '45px' }} /></a>
+            <nav className="navbar bg_xtrablk nav_border fixed-top border-bottom">
+                <a className="navbar-brand" href="/"><img className="rounded-circle" src={Logo} style={{ height: '45px', width: '45px' }} alt="" /></a>
                 <ul className="navbar-nav d-flex flex-row">
                     <li className="nav-item">
                         <a className="nav-link text-light font-weight-bold" href="/">Home</a>

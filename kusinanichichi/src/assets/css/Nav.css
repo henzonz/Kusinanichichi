@@ -1,3 +1,10 @@
+
 .nav-item{
     padding: 0 20px !important;
+}
+.bg_xtrablk{
+    background-color:#010103 !important;
+}
+.nav_border{
+    border-color: #E3BC9A !important;
 }

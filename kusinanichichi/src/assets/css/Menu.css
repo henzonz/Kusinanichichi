@@ -1,16 +1,31 @@
 .page{
     padding-top: 70px;
+    background-color:#010103 !important;
+
+}
+.bg_xtrablk{
+    background-color:#010103 !important;
+}
+.border_nude{
+    border-color: #E3BC9A !important;
 }
 .food_options{
-    padding-top: 10vh;
+    padding-top: 4vh;
 }
 .food_cards{
     margin:auto;
 }
 .menu_writing{
     font-size: 0.895rem !important;
+    color:#E3BC9A !important;
 }
-.food_options{
-    
-
+@media only screen and (min-width:768px){
+    #food_options_mobile{
+       display: none
+    }
+}
+@media only screen and (max-width: 767px){
+    #food_options_lgscrn{
+       display: none;
+    }
 }
