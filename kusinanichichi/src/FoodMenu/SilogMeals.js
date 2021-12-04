@@ -16,44 +16,44 @@ function SilogMeals() {
     return (
         <div className="page container-fluid">
             {/* Mobile screen */}
-            <div id="food_options_mobile" className="row food_options">
+            <div id="food_options_mobile" className="row food_options mt-4">
                     <div className="col-md-6 col-lg-5 col-11 py-2 d-flex container flex-column flex-wrap food_options">
-                        <a className="btn border-dark bg-light menu_writing" href="/silogmeals" role="button">Silog Meals</a>
-                        <a className="btn border-dark bg-light mt-3 menu_writing" href="/snacks" role="button">Snacks</a>
-                        <a className="btn border-dark bg-light mt-3 menu_writing" href="/drinks" role="button">Drinks</a>
+                        <a className="btn bg_xtrablk border border_nude menu_writing" href="/silogmeals" role="button">Silog Meals</a>
+                        <a className="btn bg_xtrablk border border_nude mt-3 menu_writing" href="/snacks" role="button">Snacks</a>
+                        <a className="btn bg_xtrablk border border_nude mt-3 menu_writing" href="/drinks" role="button">Drinks</a>
                     </div>
                 
 
-                <div className="container mt-5 mr-3">
+                <div className="container mt-5">
                     <div className="d-flex row text-center">
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto" src={Tapsilog} style={{ height: '175px', width: '235px' }} alt="" />
+                        <div className="card col-lg-4 col-sm-6 bg_xtrablk border-0 food_cards">
+                            <img className="card-img-top m-auto border rounded border_nude" src={Tapsilog} style={{ height: '175px', width: '235px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold">Tapsilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Tapsilog</div>
                             </div>
                         </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto" src={Tocilog} style={{ height: '175px', width: '235px' }} alt="" />
+                        <div className="card col-lg-4 col-sm-6 bg_xtrablk border-0 food_cards">
+                            <img className="card-img-top m-auto border rounded border_nude" src={Tocilog} style={{ height: '175px', width: '235px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold">Tocilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Tocilog</div>
                             </div>
                         </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto" src={Liemposilog} style={{ height: '175px', width: '235px' }} alt="" />
+                        <div className="card col-lg-4 col-sm-6 bg_xtrablk border-0 food_cards">
+                            <img className="card-img-top m-auto border rounded border_nude" src={Liemposilog} style={{ height: '175px', width: '235px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold">Liemposilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Liemposilog</div>
                             </div>
                         </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto" src={Hotsilog} style={{ height: '175px', width: '235px' }} alt="" />
+                        <div className="card col-lg-4 col-sm-6 bg_xtrablk border-0 food_cards">
+                            <img className="card-img-top m-auto border rounded border_nude" src={Hotsilog} style={{ height: '175px', width: '235px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold">Hotsilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Hotsilog</div>
                             </div>
                         </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto" src={Chicksilog} style={{ height: '175px', width: '235px' }} alt="" />
+                        <div className="card col-lg-4 col-sm-6 bg_xtrablk border-0 food_cards">
+                            <img className="card-img-top m-auto border rounded border_nude" src={Chicksilog} style={{ height: '175px', width: '235px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold">Chicksilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Chicksilog</div>
                             </div>
                         </div>
                     </div>
@@ -73,31 +73,31 @@ function SilogMeals() {
                         <div className="card bg_xtrablk col-lg-5 col-md-6 border-0 food_cards m-2">
                             <img className="card-img-top m-auto border rounded border_nude" src={Tapsilog} style={{ height: '175px', width: '200px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold text-light">Tapsilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Tapsilog</div>
                             </div>
                         </div>
                         <div className="card bg_xtrablk col-lg-5 col-md-6 border-0 food_cards m-2">
                             <img className="card-img-top m-auto border rounded border_nude" src={Tocilog} style={{ height: '175px', width: '200px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold text-light">Tocilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Tocilog</div>
                             </div>
                         </div>
                         <div className="card bg_xtrablk col-lg-5 col-md-6 border-0 food_cards m-2">
                             <img className="card-img-top m-auto border rounded border_nude" src={Liemposilog} style={{ height: '175px', width: '200px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold text-light">Liemposilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Liemposilog</div>
                             </div>
                         </div>
                         <div className="card bg_xtrablk col-lg-5 col-md-6 border-0 food_cards m-2">
                             <img className="card-img-top m-auto border rounded border_nude" src={Hotsilog} style={{ height: '175px', width: '200px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold text-light">Hotsilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Hotsilog</div>
                             </div>
                         </div>
                         <div className="card bg_xtrablk col-lg-5 col-md-6 border-0 food_cards m-2">
                             <img className="card-img-top m-auto border rounded border_nude" src={Chicksilog} style={{ height: '175px', width: '200px' }} alt="" />
                             <div className="card-body">
-                                <div className="card-title font-weight-bold text-light">Chicksilog</div>
+                                <div className="card-title font-weight-bold menu_writing">Chicksilog</div>
                             </div>
                         </div>
                     </div>
