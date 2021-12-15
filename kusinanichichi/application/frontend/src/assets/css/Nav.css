@@ -1,0 +1,20 @@
+
+.nav-item{
+    padding: 0 20px !important;
+}
+.bg_xtrablk{
+    background-color:#010103 !important;
+}
+.nav_border{
+    border-color: #E3BC9A !important;
+}
+
+#navigation a{
+    color: #E3BC9A !important;
+    font-size: 1.05rem;
+}
+#navigation a:active{
+    color: yellow !important;
+    font-size: 1.05rem;
+}
+
