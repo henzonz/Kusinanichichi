@@ -1,20 +1,19 @@
 
 .nav-item{
-    padding: 0 20px !important;
-}
-.bg_xtrablk{
-    background-color:#010103 !important;
+    padding: 0 2rem !important;
 }
 .nav_border{
-    border-color: #E3BC9A !important;
+    border-color: #F78154 !important;
+}
+#navigation a{
+    color: black !important;
+    font-size: 1.05rem;
+    letter-spacing: 0.2rem;
+}
+#navigation a:hover{
+    color: #F78154 !important;
+    font-size: 1.05rem;
 }
 
-#navigation a{
-    color: #E3BC9A !important;
-    font-size: 1.05rem;
-}
-#navigation a:active{
-    color: yellow !important;
-    font-size: 1.05rem;
-}
+ 
 

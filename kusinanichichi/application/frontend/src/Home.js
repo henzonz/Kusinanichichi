@@ -4,7 +4,7 @@ import Logo from './assets/img/logo.jpg'
 
 const Home = () => {
     return (
-        <div className="page">
+        <div className="homepage">
                 <div>IS THIS OWKRING?!</div>
                 <div>IS THIS OWKRING?!</div>
                 <div>IS THIS OWKRING?!</div>
