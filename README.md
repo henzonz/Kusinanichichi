@@ -1,6 +1,6 @@
 # Kusinanichichi
 
-A small family-owned restaurant located in the Philippines that provides affordable food options to the local people.
+A simple website for a small family-owned restaurant located in the Philippines that provides affordable food options to the local people. Built and designed using React with HTML/CSS and Bootstrap.
 
 To run:
 1. Git clone the project
