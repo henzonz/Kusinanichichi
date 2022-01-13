@@ -1,14 +1,7 @@
 import '../assets/css/Menu.css'
 import '../assets/css/bootstrap.min.css'
-import Logo from '../assets/img/logo.jpg'
-import Sisig from '../assets/img/sisig.jpg'
-import Wings from '../assets/img/wings.jpg'
 import Sweets from '../assets/img/mango_overload.png'
-import Hotsilog from '../assets/img/hotsilog.jpg'
-import Liemposilog from '../assets/img/liemposilog.jpg'
-import Tapsilog from '../assets/img/tapsilog.jpg'
-import Tocilog from '../assets/img/tocinosilog.jpg'
-import Chicksilog from '../assets/img/chicksilog.jpg'
+
 
 
 function Drinks() {
@@ -33,7 +26,7 @@ function Drinks() {
                 </div>
             </div>
             {/* Larger screen */}
-            <div id="food_options_lgscrn" className="row mt-5">
+            <div id="food_options_lgscrn" className="row">
                 <div className="col-md-4 py-2 d-flex flex-column flex-wrap">
                     <a className="btn btn-animation border_nude menu_writing" href="/silogmeals" role="button">Silog Meals</a>
                     <a className="btn btn-animation border_nude mt-3 menu_writing" href="/snacks" role="button">Snacks</a>

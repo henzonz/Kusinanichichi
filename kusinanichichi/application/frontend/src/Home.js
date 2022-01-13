@@ -1,6 +1,6 @@
 import './assets/css/Home.css'
 import './assets/css/bootstrap.min.css'
-import Logo from './assets/img/logo.jpg'
+
 
 const Home = () => {
     return (
