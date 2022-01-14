@@ -14,8 +14,17 @@ const db = mysql.createConnection({
 app.use(cors());
 app.use(express.json());
 
-app.get("/menu", (req, res) => {
-    db.query("SELECT * FROM menu", (err, result) => {
+app.get("/silogmenu", (req, res) => {
+    db.query("SELECT * FROM silogmenu", (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
+});
+app.get("/drinkmenu", (req, res) => {
+    db.query("SELECT * FROM drinksmenu", (err, result) => {
         if (err) {
             console.log(err);
         } else {

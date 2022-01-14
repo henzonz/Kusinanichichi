@@ -3,32 +3,13 @@ import Axios from 'axios';
 
 import '../assets/css/Menu.css'
 import '../assets/css/bootstrap.min.css'
-import Hotsilog from '../assets/img/hotsilog.jpg'
-import Liemposilog from '../assets/img/liemposilog.jpg'
-import Tapsilog from '../assets/img/tapsilog.jpg'
-import Tocilog from '../assets/img/tocinosilog.jpg'
-import Chicksilog from '../assets/img/chicksilog.jpg'
 
 function SilogMeals() {
 
-
     const [foodMenu, setFoodMenu] = useState([]);
-    const items = [];
-
-    // useEffect(() => {
-    //     Axios.get("http://localhost:3001/menu").then((response) => {
-    //         setFoodMenu(response.data);
-    //         console.log(response.data);
-    //     });
-    // }, []);
-
-    // const getFoodMenu = () => {
-    //     Axios.get("http://localhost:3001/menu").then((response) => {
-    //         setFoodMenu(response.data);
-    //     })
-    // }
+   
     useEffect(() => {
-        Axios.get("http://localhost:3001/menu").then((response) => {
+        Axios.get("http://localhost:3001/silogmenu").then((response) => {
             setFoodMenu(response.data);
         });
     });
@@ -45,36 +26,16 @@ function SilogMeals() {
                 </div>
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Tapsilog} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Tapsilog</div>
+                    {foodMenu.map((item, i) => {
+                        return (
+                            <div className="card col-lg-4 col-sm-6 border-0 food_cards">
+                                <img className="card-img-top m-auto rounded border_nude" src={item.foodImgPath} style={{ height: '175px', width: '200px' }} alt="" />
+                                <div className="card-body">
+                                    <div className="card-title menu_writing"> ₱{item.foodPrice} &nbsp; — &nbsp;{item.foodName}</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Tocilog} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Tocilog</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Liemposilog} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Liemposilog</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Hotsilog} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Hotsilog</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Chicksilog} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Chicksilog</div>
-                            </div>
-                        </div>
+                        );
+                    })}
                     </div>
                 </div>
             </div>
@@ -88,50 +49,23 @@ function SilogMeals() {
                     <a className="btn btn-animation border_nude mt-3 menu_writing" href="/drinks" role="button">Drinks</a>
                 </div>
 
-                <div>
-
-                    {foodMenu.map((item, i) => {
-                        return (
-                        <h1 key={i}>
-                            {item.foodName} <span>P{item.foodPrice}</span>
-                        </h1>
-                        );
-                    })}
-
-                </div>
+        
 
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Tapsilog} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Tapsilog</div>
+                    {foodMenu.map((item, i) => {
+                        return (
+                            <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
+                                <img className="card-img-top m-auto rounded border_nude" src={item.foodImgPath} style={{ height: '175px', width: '200px' }} alt="" />
+                                <div className="card-body">
+                                    <div className="card-title menu_writing"> 
+                                     &#8369;{item.foodPrice} &nbsp; — &nbsp;{item.foodName}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Tocilog} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Tocilog</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Liemposilog} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Liemposilog</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Hotsilog} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Hotsilog</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Chicksilog} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Chicksilog</div>
-                            </div>
-                        </div>
+                        );
+                    })}
+                        
                     </div>
                 </div>
             </div>

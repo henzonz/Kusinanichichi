@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import Axios from 'axios';
 import '../assets/css/Menu.css'
 import '../assets/css/bootstrap.min.css'
 import Sweets from '../assets/img/mango_overload.png'
@@ -5,6 +7,15 @@ import Sweets from '../assets/img/mango_overload.png'
 
 
 function Drinks() {
+
+    const [drinkMenu, setDrinkMenu] = useState([]);
+
+    useEffect(() => {
+        Axios.get("http://localhost:3001/drinkmenu").then((response) => {
+            setDrinkMenu(response.data);
+        });
+    });
+
     return (
         <div className="page container-fluid">
             {/* Mobile screen */}
@@ -38,9 +49,21 @@ function Drinks() {
                             <img className="card-img-top m-auto rounded border_nude" src={Sweets} style={{ height: '175px', width: '200px' }} alt="" />
                             <div className="card-body">
                                 <div className="card-title menu_writing">Mango Overload
-                                <div className="text-muted">12oz - 16oz - 22oz</div></div>
+                                    <div className="text-muted">12oz - 16oz - 22oz</div></div>
                             </div>
                         </div>
+                        {drinkMenu.map((item, i) => {
+                            return (
+                                <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
+                                    <img className="card-img-top m-auto rounded border_nude" src={item.drinkImgPath} style={{ height: '175px', width: '200px' }} alt="" />
+                                    <div className="card-body">
+                                        <div className="card-title menu_writing"> {item.drinkName}
+                                            <div className="text-muted">12oz:&nbsp;&#8369;45 &nbsp;16oz:&nbsp;&#8369;65 &nbsp;22oz:&nbsp;&#8369;85</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
