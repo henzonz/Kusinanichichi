@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Axios from 'axios';
 import '../assets/css/Menu.css'
 import '../assets/css/bootstrap.min.css'
-import Sweets from '../assets/img/mango_overload.png'
+import Sweets from '../assets/img/mango_overload.jpeg'
 
 
 
@@ -27,12 +27,19 @@ function Drinks() {
                 </div>
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Sweets} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title font-weight-bold menu_writing">Mango Overload</div>
-                            </div>
-                        </div>
+                        {drinkMenu.map((item, i) => {
+                            return (
+                                <div className="card col-lg-4 col-sm-6 border-0 food_cards">
+                                    <img className="card-img-top m-auto rounded border_nude" src={item.drinkImgPath} style={{ height: '190px', width: '250px' }} alt="" />
+                                    <div className="card-body">
+                                        <div className="card-title menu_writing"> {item.drinkName}
+                                            <div className="text-muted">{item.drinkSizeSm}oz — {item.drinkSizeMd}oz — {item.drinkSizeLg}oz </div>
+                                            <div className="menu_writing"> ₱{item.drinkPriceSm} — ₱{item.drinkPriceMd} — ₱{item.drinkPriceLg} </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
@@ -45,20 +52,14 @@ function Drinks() {
                 </div>
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Sweets} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Mango Overload
-                                    <div className="text-muted">12oz - 16oz - 22oz</div></div>
-                            </div>
-                        </div>
                         {drinkMenu.map((item, i) => {
                             return (
                                 <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                                    <img className="card-img-top m-auto rounded border_nude" src={item.drinkImgPath} style={{ height: '175px', width: '200px' }} alt="" />
+                                    <img className="card-img-top m-auto rounded border_nude" src={item.drinkImgPath} style={{ height: '190px', width: '250px' }} alt="" />
                                     <div className="card-body">
                                         <div className="card-title menu_writing"> {item.drinkName}
-                                            <div className="text-muted">12oz:&nbsp;&#8369;45 &nbsp;16oz:&nbsp;&#8369;65 &nbsp;22oz:&nbsp;&#8369;85</div>
+                                            <div className="text-muted">{item.drinkSizeSm}oz — {item.drinkSizeMd}oz — {item.drinkSizeLg}oz </div>
+                                            <div className="menu_writing"> ₱{item.drinkPriceSm} — ₱{item.drinkPriceMd} — ₱{item.drinkPriceLg} </div>
                                         </div>
                                     </div>
                                 </div>

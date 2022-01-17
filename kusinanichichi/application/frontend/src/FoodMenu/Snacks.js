@@ -1,7 +1,7 @@
 import '../assets/css/Menu.css'
 import '../assets/css/bootstrap.min.css'
 import BuffaloWings from '../assets/img/buffalo_wings.jpeg'
-import CheesyWings from '../assets/img/cheesy_wings.jpeg'
+import CheesyWings from '../assets/img/cheesywings.jpeg'
 import Siomai from '../assets/img/siomai.jpeg'
 
 
