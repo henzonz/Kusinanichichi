@@ -14,6 +14,7 @@ function SilogMeals() {
         });
     });
 
+    
     return (
         <div className="page container-fluid">
             {/* Mobile screen */}
@@ -27,11 +28,12 @@ function SilogMeals() {
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
                     {foodMenu.map((item, i) => {
+                        var foodPriceInDecimals = parseFloat(item.foodPrice).toFixed(2);
                         return (
-                            <div className="card col-lg-4 col-sm-6 border-0 food_cards">
+                            <div className="card col-lg-4 col-sm-6 border-0 food_cards p-4">
                                 <img className="card-img-top m-auto rounded border_nude" src={item.foodImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                 <div className="card-body">
-                                    <div className="card-title menu_writing"> ₱{item.foodPrice} &nbsp; — &nbsp;{item.foodName}</div>
+                                    <div className="card-title menu_writing"> ₱{foodPriceInDecimals} &nbsp; — &nbsp;{item.foodName}</div>
                                 </div>
                             </div>
                         );
@@ -54,12 +56,13 @@ function SilogMeals() {
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
                     {foodMenu.map((item, i) => {
+                        var foodPriceInDecimals = parseFloat(item.foodPrice).toFixed(2);
                         return (
                             <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
                                 <img className="card-img-top m-auto rounded border_nude" src={item.foodImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                 <div className="card-body">
                                     <div className="card-title menu_writing"> 
-                                     &#8369;{item.foodPrice} &nbsp; — &nbsp;{item.foodName}
+                                     &#8369;{foodPriceInDecimals} &nbsp; — &nbsp;{item.foodName}
                                     </div>
                                 </div>
                             </div>

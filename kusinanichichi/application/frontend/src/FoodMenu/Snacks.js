@@ -28,12 +28,13 @@ function Snacks() {
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
                         {snackMenu.map((item, i) => {
+                            var snackPriceInDecimals = parseFloat(item.snackPrice).toFixed(2);
                         return (
-                            <div className="card col-lg-4 col-sm-6 border-0 food_cards">
+                            <div className="card col-lg-4 col-sm-6 border-0 food_cards p-4">
                                 <img className="card-img-top m-auto rounded border_nude" src={item.snackImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                 <div className="card-body">
                                     <div className="card-title menu_writing"> 
-                                     &#8369;{item.snackPrice} &nbsp; — &nbsp;{item.snackName}
+                                     &#8369;{snackPriceInDecimals} &nbsp; — &nbsp;{item.snackName}
                                     </div>
                                 </div>
                             </div>
@@ -52,12 +53,13 @@ function Snacks() {
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
                     {snackMenu.map((item, i) => {
+                        var snackPriceInDecimals = parseFloat(item.snackPrice).toFixed(2);
                         return (
                             <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
                                 <img className="card-img-top m-auto rounded border_nude" src={item.snackImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                 <div className="card-body">
                                     <div className="card-title menu_writing"> 
-                                     &#8369;{item.snackPrice} &nbsp; — &nbsp;{item.snackName}
+                                     &#8369;{snackPriceInDecimals} &nbsp; — &nbsp;{item.snackName}
                                     </div>
                                 </div>
                             </div>

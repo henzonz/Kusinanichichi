@@ -28,13 +28,16 @@ function Drinks() {
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
                         {drinkMenu.map((item, i) => {
+                            var drinkPriceInDecimalsSm = parseFloat(item.drinkPriceSm).toFixed(2);
+                            var drinkPriceInDecimalsMd = parseFloat(item.drinkPriceMd).toFixed(2);
+                            var drinkPriceInDecimalsLg = parseFloat(item.drinkPriceLg).toFixed(2);
                             return (
-                                <div className="card col-lg-4 col-sm-6 border-0 food_cards">
+                                <div className="card col-lg-4 col-sm-6 border-0 food_cards p-4">
                                     <img className="card-img-top m-auto rounded border_nude" src={item.drinkImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                     <div className="card-body">
                                         <div className="card-title menu_writing"> {item.drinkName}
                                             <div className="text-muted">{item.drinkSizeSm}oz — {item.drinkSizeMd}oz — {item.drinkSizeLg}oz </div>
-                                            <div className="menu_writing"> ₱{item.drinkPriceSm} — ₱{item.drinkPriceMd} — ₱{item.drinkPriceLg} </div>
+                                            <div className="menu_writing"> ₱{drinkPriceInDecimalsSm} — ₱{drinkPriceInDecimalsMd} — ₱{drinkPriceInDecimalsLg} </div>
                                         </div>
                                     </div>
                                 </div>
@@ -53,13 +56,16 @@ function Drinks() {
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
                         {drinkMenu.map((item, i) => {
+                            var drinkPriceInDecimalsSm = parseFloat(item.drinkPriceSm).toFixed(2);
+                            var drinkPriceInDecimalsMd = parseFloat(item.drinkPriceMd).toFixed(2);
+                            var drinkPriceInDecimalsLg = parseFloat(item.drinkPriceLg).toFixed(2);
                             return (
                                 <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
                                     <img className="card-img-top m-auto rounded border_nude" src={item.drinkImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                     <div className="card-body">
                                         <div className="card-title menu_writing"> {item.drinkName}
                                             <div className="text-muted">{item.drinkSizeSm}oz — {item.drinkSizeMd}oz — {item.drinkSizeLg}oz </div>
-                                            <div className="menu_writing"> ₱{item.drinkPriceSm} — ₱{item.drinkPriceMd} — ₱{item.drinkPriceLg} </div>
+                                            <div className="menu_writing"> ₱{drinkPriceInDecimalsSm} — ₱{drinkPriceInDecimalsMd} — ₱{drinkPriceInDecimalsLg} </div>
                                         </div>
                                     </div>
                                 </div>
