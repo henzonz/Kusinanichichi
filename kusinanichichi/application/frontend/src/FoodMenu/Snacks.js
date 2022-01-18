@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import Axios from 'axios';
 import '../assets/css/Menu.css'
 import '../assets/css/bootstrap.min.css'
 import BuffaloWings from '../assets/img/buffalo_wings.jpeg'
@@ -5,7 +7,15 @@ import CheesyWings from '../assets/img/cheesywings.jpeg'
 import Siomai from '../assets/img/siomai.jpeg'
 
 
+
 function Snacks() {
+    const [snackMenu, setSnackMenu] = useState([]);
+   
+    useEffect(() => {
+        Axios.get("http://localhost:3001/snackmenu").then((response) => {
+            setSnackMenu(response.data);
+        });
+    });
     return (
         <div className="page container-fluid">
             {/* Mobile screen */}
@@ -17,24 +27,18 @@ function Snacks() {
                 </div>
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
-                        <div className="card col-lg-4 col-sm-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={BuffaloWings} style={{ height: '175px', width: '235px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Buffalo Wings</div>
+                        {snackMenu.map((item, i) => {
+                        return (
+                            <div className="card col-lg-4 col-sm-6 border-0 food_cards">
+                                <img className="card-img-top m-auto rounded border_nude" src={item.snackImgPath} style={{ height: '190px', width: '235px' }} alt="" />
+                                <div className="card-body">
+                                    <div className="card-title menu_writing"> 
+                                     &#8369;{item.snackPrice} &nbsp; — &nbsp;{item.snackName}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card col-lg-4 col-md-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={CheesyWings} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Cheesy Wings</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-4 col-md-6 border-0 food_cards">
-                            <img className="card-img-top m-auto rounded border_nude" src={Siomai} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Siomai</div>
-                            </div>
-                        </div>
+                        );
+                    })}
                     </div>
                 </div>
             </div>
@@ -47,24 +51,18 @@ function Snacks() {
                 </div>
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={BuffaloWings} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Buffalo Wings</div>
+                    {snackMenu.map((item, i) => {
+                        return (
+                            <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
+                                <img className="card-img-top m-auto rounded border_nude" src={item.snackImgPath} style={{ height: '190px', width: '235px' }} alt="" />
+                                <div className="card-body">
+                                    <div className="card-title menu_writing"> 
+                                     &#8369;{item.snackPrice} &nbsp; — &nbsp;{item.snackName}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={CheesyWings} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Cheesy Wings</div>
-                            </div>
-                        </div>
-                        <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                            <img className="card-img-top m-auto rounded border_nude" src={Siomai} style={{ height: '175px', width: '200px' }} alt="" />
-                            <div className="card-body">
-                                <div className="card-title menu_writing">Siomai</div>
-                            </div>
-                        </div>
+                        );
+                    })}
 
                     </div>
                 </div>

@@ -32,6 +32,16 @@ app.get("/drinkmenu", (req, res) => {
         }
     });
 });
+app.get("/snackmenu", (req, res) => {
+    db.query("SELECT * FROM snacksmenu", (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
+});
+
 
 app.listen(3001, () => {
     console.log("running on port 3001");
