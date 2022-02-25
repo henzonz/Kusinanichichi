@@ -24,6 +24,7 @@ function Snacks() {
                     <a className="btn border_nude menu_writing" href="/silogmeals" role="button">Silog Meals</a>
                     <a className="btn border_nude mt-3 menu_writing current" href="/snacks" role="button">Snacks</a>
                     <a className="btn border_nude mt-3 menu_writing" href="/drinks" role="button">Drinks</a>
+                    <a className="btn btn-animation border_nude mt-3 menu_writing" href="/wings" role="button">Wings</a>
                 </div>
                 <div className="container mt-5">
                     <div className="d-flex row text-center">
@@ -49,6 +50,7 @@ function Snacks() {
                     <a className="btn btn-animation border_nude menu_writing" href="/silogmeals" role="button">Silog Meals</a>
                     <a className="btn btn-animation border_nude mt-3 menu_writing current" href="/snacks" role="button">Snacks</a>
                     <a className="btn btn-animation border_nude mt-3 menu_writing" href="/drinks" role="button">Drinks</a>
+                    <a className="btn btn-animation border_nude mt-3 menu_writing" href="/wings" role="button">Wings</a>
                 </div>
                 <div className="container col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">

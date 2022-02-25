@@ -5,15 +5,38 @@
 .nav_border{
     border-color: #F78154 !important;
 }
-#navigation a{
+#navigation .nav-link{
     color: black !important;
     font-size: 1.05rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
+    font-weight:bold;
 }
-#navigation a:hover{
+#navigation .nav-link:hover{
     color: #F78154 !important;
     font-size: 1.05rem;
 }
+.address-writing a{
+    font-size: 0.75rem;
+    color: black !important;
+}
+.navbar-brand{
+    transition: transform 2s ease-in-out;
+}
+.navbar-brand:hover{
+    animation: fade 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes fade{
+    from{
+      opacity: 100%;
+    }
+    to{
+        opacity: 50%;
+    }
+    
+  }
 
  
 

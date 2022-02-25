@@ -41,6 +41,15 @@ app.get("/snackmenu", (req, res) => {
         }
     });
 });
+app.get("/wingsmenu", (req, res) => {
+    db.query("SELECT * FROM wingsmenu", (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
+});
 
 
 app.listen(3001, () => {

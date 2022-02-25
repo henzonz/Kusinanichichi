@@ -5,6 +5,8 @@ import Home from './Home'
 import Navbar from './Navbar'
 import Snacks from './FoodMenu/Snacks'
 import Drinks from './FoodMenu/Drinks'
+import Contacts from './Contacts'
+import Wings from './FoodMenu/Wings'
 
 
 
@@ -22,6 +24,12 @@ function App() {
           </Route>
           <Route path="/silogmeals">
             <SilogMeals />
+          </Route>
+          <Route path="/wings">
+            <Wings />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
           </Route>
           <Route path="/">
             <Home />

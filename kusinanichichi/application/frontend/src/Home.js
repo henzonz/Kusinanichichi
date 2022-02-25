@@ -2,17 +2,11 @@ import './assets/css/Home.css'
 import './assets/css/bootstrap.min.css'
 
 
-const Home = () => {
+function Home() {
     return (
         <div className="homepage">
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
-                <div>IS THIS OWKRING?!</div>
+                <div className="text-center text-muted">**<u>Please order through our <a className="text-decoration-none" href="https://www.facebook.com/kusinanichichipromisesalasa" target="_blank">Facebook</a> page</u>**</div>
+                
             {/* <div id="carouselIndicators" className="carousel slide" data-ride="carousel">
             <ol className="caoursel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0" className="active"></li>
