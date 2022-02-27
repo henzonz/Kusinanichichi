@@ -5,7 +5,7 @@
     background-color:#F78154 !important;
     z-index:1;
 }
-.border_nude{
+.border-orange{
     border: 0.1rem solid !important;
     border-color: #F78154 !important;
 }
@@ -18,15 +18,4 @@
 .menu_writing{
     color: black !important;
     font-size: 0.945rem !important;
-}
-
-@media only screen and (min-width:768px){
-    #food_options_mobile{
-       display: none
-    }
-}
-@media only screen and (max-width: 767px){
-    #food_options_lgscrn{
-       display: none;
-    }
 }

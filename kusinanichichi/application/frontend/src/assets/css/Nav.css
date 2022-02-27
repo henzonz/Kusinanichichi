@@ -9,7 +9,8 @@
     color: black !important;
     font-size: 1.05rem;
     letter-spacing: 0.15rem;
-    font-weight:bold;
+    transition: 0.5s ease-in-out;
+    
 }
 #navigation .nav-link:hover{
     color: #F78154 !important;
@@ -20,23 +21,18 @@
     color: black !important;
 }
 .navbar-brand{
-    transition: transform 2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .navbar-brand:hover{
-    animation: fade 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 810px){
+    .nav-lgscreen{
+        display:none;
+    }
     
 }
-@keyframes fade{
-    from{
-      opacity: 100%;
-    }
-    to{
-        opacity: 50%;
-    }
-    
-  }
 
  
 
