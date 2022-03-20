@@ -1,5 +1,5 @@
-.page{
-    padding-top:10rem;
+.menupage{
+    padding-top:2rem;
 }
 .btn-animation:hover{
     background-color:#F78154 !important;
@@ -9,13 +9,21 @@
     border: 0.1rem solid !important;
     border-color: #F78154 !important;
 }
+.btn-bg{
+    background-color: #f7825430;
+}
  a.current{
     background-color:#F78154 !important;
 }
 .food_cards{
     margin:auto;
 }
+/* .food-img:hover{
+    cursor:pointer;
+    transform: scale(1.2);
+} */
 .menu_writing{
     color: black !important;
     font-size: 0.945rem !important;
 }
+

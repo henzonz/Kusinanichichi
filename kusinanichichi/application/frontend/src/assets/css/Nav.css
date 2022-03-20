@@ -26,13 +26,55 @@
 .navbar-brand:hover{
     opacity: 50%;
 }
+.nav-menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 80px;
+    cursor: pointer;
+    margin: 0.8rem;
+    transition: all .5s ease-in-out;
+}
+.nav-menu-btn__burger{
+    width: 20px;
+    height: 4px;
+    background: #000;
+    transition: all .5s ease-in-out;
+}
+.nav-menu-btn__burger::before,
+.nav-menu-btn__burger::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    margin-top: -5px;
+    background: #000;
+    transition: all .5s ease-in-out;
+}
+.nav-menu-btn__burger::before{
+    transform: translateY(-16px);
+    margin-top: 5px;
+}
+.nav-menu-btn__burger::after{
+    transform: translateY(16px);
+}
+/*Animation*/
+.nav-menu-btn.open .nav-menu-btn__burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.nav-menu-btn.open .nav-menu-btn__burger::before{
+    transform: rotate(39.5deg) translate(35px, -35px);
+}
+.nav-menu-btn.open .nav-menu-btn__burger::after{
+    transform: rotate(-39.5deg) translate(35px, 35px);
+}
 
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 806px){
     .nav-lgscreen{
         display:none;
     }
-    
 }
-
- 
-

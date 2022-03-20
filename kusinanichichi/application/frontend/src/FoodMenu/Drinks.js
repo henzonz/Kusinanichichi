@@ -17,14 +17,14 @@ function Drinks() {
     });
 
     return (
-        <div className="page container">
+        <div className="menupage container">
             {/* Larger screen */}
-            <div id="food_options_lgscrn" className="row">
+            <div className="row">
                 <div className="col-md-4 py-2 d-flex flex-column flex-wrap">
-                    <a className="btn btn-animation border-orange menu_writing" href="/silogmeals" role="button">Silog Meals</a>
-                    <a className="btn btn-animation border-orange mt-3 menu_writing" href="/snacks" role="button">Snacks</a>
-                    <a className="btn btn-animation border-orange mt-3 menu_writing current" href="/drinks" role="button">Drinks</a>
-                    <a className="btn btn-animation border-orange mt-3 menu_writing" href="/wings" role="button">Wings</a>
+                    <a className="btn btn-animation btn-bg border-orange menu_writing" href="/silogmeals" role="button">Silog Meals</a>
+                    <a className="btn btn-animation btn-bg border-orange mt-3 menu_writing" href="/snacks" role="button">Snacks</a>
+                    <a className="btn btn-animation btn-bg border-orange mt-3 menu_writing current" href="/drinks" role="button">Drinks</a>
+                    <a className="btn btn-animation btn-bg border-orange mt-3 menu_writing" href="/wings" role="button">Wings</a>
                 </div>
                 <div className="mx-auto col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
@@ -39,6 +39,7 @@ function Drinks() {
                                         <div className="card-title menu_writing"> {item.drinkName}
                                             <div className="text-muted">{item.drinkSizeSm}oz — {item.drinkSizeMd}oz — {item.drinkSizeLg}oz </div>
                                             <div className="menu_writing"> ₱{drinkPriceInDecimalsSm} — ₱{drinkPriceInDecimalsMd} — ₱{drinkPriceInDecimalsLg} </div>
+                                            <div>NATA and Pearl ₱10.00/scoop </div>
                                         </div>
                                     </div>
                                 </div>

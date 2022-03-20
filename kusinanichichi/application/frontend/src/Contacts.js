@@ -3,9 +3,7 @@ import './assets/css/Contacts.css'
 function Contacts() {
     return (
         <div className="container-fluid page">
-            <div>
-                <img className="contactfampic" src={FamPic}/>
-            </div>
+            
         </div>
     );
 }
