@@ -1,5 +1,5 @@
 .menupage{
-    padding-top:2rem;
+    padding-top:10rem;
 }
 .btn-animation:hover{
     background-color:#F78154 !important;
@@ -18,10 +18,9 @@
 .food_cards{
     margin:auto;
 }
-/* .food-img:hover{
-    cursor:pointer;
-    transform: scale(1.2);
-} */
+.food-img{
+    object-fit: cover !important;
+}
 .menu_writing{
     color: black !important;
     font-size: 0.945rem !important;

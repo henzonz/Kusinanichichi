@@ -17,7 +17,7 @@ function SilogMeals() {
 
     return (
         <div className="menupage container">
-        
+            <div className="h2 text-center"> SILOG MEALS</div>
                 <div className="row">
                     <div className="col-md-4 py-2 d-flex flex-column flex-wrap">
                         <a className="btn btn-animation btn-bg border-orange menu_writing current" href="/silogmeals" role="button">Silog Meals</a>

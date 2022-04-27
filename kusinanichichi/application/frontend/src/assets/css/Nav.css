@@ -1,6 +1,5 @@
-
 .nav-item{
-    padding: 0 2rem !important;
+    padding: 0 1rem !important;
 }
 .nav_border{
     border-color: #F78154 !important;
@@ -8,7 +7,7 @@
 #navigation .nav-link{
     color: black !important;
     font-size: 1.05rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.2rem;
     transition: 0.5s ease-in-out;
     
 }
@@ -27,7 +26,8 @@
     opacity: 50%;
 }
 .nav-menu-btn{
-    position: relative;
+    z-index: 2 !important;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,21 +36,27 @@
     cursor: pointer;
     margin: 0.8rem;
     transition: all .5s ease-in-out;
+    background-color: white;
+    border-radius: 25px;
+
 }
 .nav-menu-btn__burger{
+    z-index: 2 !important;
     width: 20px;
-    height: 4px;
-    background: #000;
+    height: 2px;
+    background: #F78154;
     transition: all .5s ease-in-out;
+    position: fixed;
 }
 .nav-menu-btn__burger::before,
 .nav-menu-btn__burger::after{
+    z-index: 2 !important;
     content: '';
     position: absolute;
     width: 20px;
-    height: 4px;
+    height: 2px;
     margin-top: -5px;
-    background: #000;
+    background: #F78154;
     transition: all .5s ease-in-out;
 }
 .nav-menu-btn__burger::before{
@@ -72,9 +78,64 @@
 .nav-menu-btn.open .nav-menu-btn__burger::after{
     transform: rotate(-39.5deg) translate(35px, 35px);
 }
+.mobile-logo{
+    position: absolute;
+}
+.mobile-nav{
+    z-index: 2 !important;
+    transform: translateX();
+    width: 100%;
+    position:fixed;
+}
+.mobile-nav__position{
+    position:fixed;
+    width: 100% !important;
+}
+.mobile-nav__background{
+    background-color: white;
+}
+.mobile-nav__background.border-bottom{
+    border-color: #F78154 !important;
+}
+.nav-item.highlight:hover{
+    background-color:#F78154;
+    border-radius: 25px;
+}
 
+.mobile-nav-link__texts{
+    color: black !important;
+}
+
+@media only screen and (min-width: 805px){
+    .mobile-nav{
+        display:none;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    .nav-menu-btn{
+        margin-right: 50px !important;
+    }
+}
 @media only screen and (max-width: 806px){
     .nav-lgscreen{
         display:none;
     }
 }
+/* 
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    25%{
+        trnasform: translateX(75%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    75%{
+        transform: translateX(25%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+} */

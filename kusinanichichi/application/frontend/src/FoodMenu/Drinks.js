@@ -34,7 +34,7 @@ function Drinks() {
                             var drinkPriceInDecimalsLg = parseFloat(item.drinkPriceLg).toFixed(2);
                             return (
                                 <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                                    <img className="card-img-top m-auto rounded border-orange" src={item.drinkImgPath} style={{ height: '190px', width: '235px' }} alt="" />
+                                    <img className="food-img card-img-top m-auto rounded border-orange" src={item.drinkImgPath} style={{ height: '190px', width: '235px' }} alt="" />
                                     <div className="card-body">
                                         <div className="card-title menu_writing"> {item.drinkName}
                                             <div className="text-muted">{item.drinkSizeSm}oz — {item.drinkSizeMd}oz — {item.drinkSizeLg}oz </div>

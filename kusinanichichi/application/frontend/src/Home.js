@@ -1,5 +1,8 @@
 import './assets/css/Home.css'
 import './assets/css/bootstrap.min.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+
 
 
 function Home() {
@@ -12,13 +15,13 @@ function Home() {
   const renderBestSeller = (item, i) => {
     return (
       <div className="card col-lg-3 col-md-6 border-0 m-2">
-        <img className="food-img card-img-top m-auto rounded border-orange" src={item.imgPath} style={{ height: '190px', width: '235px' }} alt="" />
+        <img className="card-img-top m-auto rounded border-orange border-thickness" src={item.imgPath} style={{ height: '190px', width: '235px' }} alt="" />
       </div>
     );
   }
   return (
     <div className="homepage">
-      <div className="text-center text-muted mb-5">**<u>Please order through our <a className="text-decoration-none" href="https://www.facebook.com/kusinanichichipromisesalasa" target="_blank">Facebook</a> page</u>**</div>
+      <div className="text-center text-muted mb-5">** <u>Please order through our <a className="text-decoration-none" href="https://www.facebook.com/kusinanichichipromisesalasa" target="_blank">Facebook</a> page</u> **</div>
 
       {/* <div className="slider">
         <div className="slide-track">
@@ -34,19 +37,20 @@ function Home() {
         <div className="row">
           <div className="mx-auto col">
             <div className="d-flex row flex-wrap justify-content-around text-center">
-
               {items.map(renderBestSeller)}
-
-              
-
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col text-center"> 
-          <a className="btn btn-animation btn-color mt-4 menu_writing" href="/silogmeals" role="button" style={{ width: '115px' }} alt="" >Menu</a>
-           </div>
+          <div className="col text-center">
+            <a className="btn btn-animation btn-color mt-4 text-dark"
+              href="/silogmeals"
+              role="button"
+              style={{ width: '115px' }}
+              alt="" > Menu <FontAwesomeIcon className="pl-3" icon={faArrowRightFromBracket} /> </a>
           </div>
+          
+        </div>
       </div>
       {/* <div id="carouselIndicators" className="carousel slide" data-ride="carousel">
             <ol className="caoursel-indicators">

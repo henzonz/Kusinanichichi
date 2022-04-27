@@ -1,8 +1,8 @@
-.page {
-    padding-top:10rem;
+.contact-page {
+    padding-top:7rem;
 }
-.contactfampic{
-    width: 100%;
-    height:auto;
-    max-width: 55ch;
+.map-responsive{
+    width: 70vw !important;
+    max-width: 80ch !important;
+    height: 350px;
 }

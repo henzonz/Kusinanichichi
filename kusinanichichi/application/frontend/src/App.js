@@ -29,7 +29,7 @@ function App() {
           <Route path="/wings">
             <Wings />
           </Route>
-          <Route path="/contacts">
+          <Route path="/contact">
             <Contacts />
           </Route>
           <Route path="/">
