@@ -2,6 +2,7 @@ import './assets/css/Home.css'
 import './assets/css/bootstrap.min.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -12,10 +13,24 @@ function Home() {
     { id: "3", imgPath: "https://i.imgur.com/siZ80nZ.jpg" },
   ];
 
+  const reviews = [
+    { id: "1", imgPath: "https://i.imgur.com/9kXwAf8.jpg" },
+    { id: "2", imgPath: "https://i.imgur.com/Ne4t0uG.jpg" },
+    { id: "3", imgPath: "https://i.imgur.com/mvkq1VS.jpg" },
+    { id: "4", imgPath: "https://i.imgur.com/c87BXKG.jpg" },
+  ];
+
   const renderBestSeller = (item, i) => {
     return (
       <div className="card col-lg-3 col-md-6 border-0 m-2">
         <img className="card-img-top m-auto rounded border-orange border-thickness" src={item.imgPath} style={{ height: '190px', width: '235px' }} alt="" />
+      </div>
+    );
+  }
+  const renderReviews = (item, i) => {
+    return (
+      <div className="card shadow-lg bg-dark col-lg-3 col-md-6 border-0 m-2">
+        <img className="card-img-top m-auto rounded" src={item.imgPath} alt="" />
       </div>
     );
   }
@@ -31,54 +46,36 @@ function Home() {
         </div>
       </div> */}
 
-      <div className="best-seller-height">
-        <div className="text-center h1 our-best-seller-font mb-5">Our Best Sellers
+      <div>
+        <div className="text-center h3 our-best-seller-font mb-5">Our Best Sellers
         </div>
         <div className="row">
           <div className="mx-auto col">
-            <div className="d-flex row flex-wrap justify-content-around text-center">
+            <div className="d-flex row flex-wrap justify-content-around">
               {items.map(renderBestSeller)}
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col text-center">
+          <div className="col text-center mb-5 mt-3">
             <a className="btn btn-animation btn-color mt-4 text-dark"
               href="/silogmeals"
               role="button"
               style={{ width: '115px' }}
               alt="" > Menu <FontAwesomeIcon className="pl-3" icon={faArrowRightFromBracket} /> </a>
           </div>
-          
+
         </div>
       </div>
-      {/* <div id="carouselIndicators" className="carousel slide" data-ride="carousel">
-            <ol className="caoursel-indicators">
-              <li data-target="#carouselIndicators" data-slide-to="0" className="active"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            </ol>
-    
-            <div className="carousel-inner w-50">
-              <div className="carousel-item">
-                <img className="d-block" src={Sisig} alt="First slide" style={{  }} />
-              </div>
-              <div className="carousel-item active">
-                <img className="d-block" src={Wings} alt="Second slide" style={{  }} />
-              </div>
-              <div className="carousel-item">
-                <img className="d-block" src={Sweets} alt="Third slide" style={{  }} />
-              </div>
-              <a className="carousel-control-prev bg-dark" href="#carouselIndicators" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a className="carousel-control-next bg-dark" href="#carouselIndicators" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
-            </div>
-          </div> */}
+     
+      <div className="h3 text-center mt-5 mb-5 our-best-seller-font">Reviews</div>
+      <div className="row">
+        <div className="mx-auto col">
+          <div className="d-flex flex-row flex-wrap justify-content-around">
+            {reviews.map(renderReviews)}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -83,7 +83,6 @@
 }
 .mobile-nav{
     z-index: 2 !important;
-    transform: translateX();
     width: 100%;
     position:fixed;
 }
@@ -98,12 +97,12 @@
     border-color: #F78154 !important;
 }
 .nav-item.highlight:hover{
-    background-color:#F78154;
-    border-radius: 25px;
+    border-bottom: solid 0.5px #F78154;
 }
 
 .mobile-nav-link__texts{
     color: black !important;
+    letter-spacing: 0.2rem;
 }
 
 @media only screen and (min-width: 805px){
