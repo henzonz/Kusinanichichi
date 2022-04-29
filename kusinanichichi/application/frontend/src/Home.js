@@ -37,15 +37,6 @@ function Home() {
   return (
     <div className="homepage">
       <div className="text-center text-muted mb-5">** <u>Please order through our <a className="text-decoration-none" href="https://www.facebook.com/kusinanichichipromisesalasa" target="_blank">Facebook</a> page</u> **</div>
-
-      {/* <div className="slider">
-        <div className="slide-track">
-          <div className="slide">
-            <img src="" />
-          </div>
-        </div>
-      </div> */}
-
       <div>
         <div className="text-center h3 our-best-seller-font mb-5">Our Best Sellers
         </div>

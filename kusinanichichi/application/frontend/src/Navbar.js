@@ -15,15 +15,6 @@ function Navbar() {
 
     let menuOpen = false;
 
-    // menuBtn.addEventListener('click', () => {
-    //     menuBtn.classList.toggle('open');
-    // })
-
-    // if(menuBtn){
-    //     menuBtn.addEventListener('click', () => {
-    //     menuBtn.classList.toggle('open');
-    // })
-    // }
 
 
     let menu
@@ -50,12 +41,6 @@ function Navbar() {
     }
     return (
         <div>
-            {/* <nav className="ml-4 nav-mobile">
-                <span className="h3">
-                    <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)}/>
-                </span>
-            </nav>
-            */}
             <div className="nav-lgscreen">
                 <nav id="navigation" className="navbar bg-light nav_border fixed-top border-bottom">
                     <div className="row">
