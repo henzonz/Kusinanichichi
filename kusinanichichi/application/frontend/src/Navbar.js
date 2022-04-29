@@ -52,13 +52,13 @@ function Navbar() {
                     <a className="navbar-brand ml-5" href="/"><img className="border-orange rounded-circle" src={Logo} style={{ height: '85px', width: '85px' }} alt="" /></a>
                     <ul id="menuLinks" className="navbar-nav d-flex flex-row">
                         <li className="nav-item">
-                            <a className="nav-link px-2 font-weight-bold" href="/">Home</a>
+                            <a className="nav-link px-2" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link px-2 font-weight-bold" href="/silogmeals">Menu</a>
+                            <a className="nav-link px-2" href="/silogmeals">Menu</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link px-2 font-weight-bold" href="/contact">Contact</a>
+                            <a className="nav-link px-2" href="/contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
