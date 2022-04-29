@@ -9,26 +9,29 @@ function Contacts() {
                 <div className="row">
                     <div className="col order-1">
                         <div className="m-5"> <span className="h5">PHONE</span>
-                            <div>+63 (949) 456-6027</div>
-                            <div>or</div>
-                            <div>+63 (949) 984-3231</div>
+                            <div className="contact-subtext">+63 (949) 456-6027</div>
+                            <div className="contact-subtext">or</div>
+                            <div className="contact-subtext">+63 (949) 984-3231</div>
+                        </div>
+                        <div className="m-5"> <span className="h5">Email</span>
+                            <div className="contact-subtext"><a href="mailto: ludyanncharisecatipon@gmail.com">ludyanncharisecatipon@gmail.com</a></div>
                         </div>
                         <div className="m-5"> <span className="h5">HOURS</span>
-                            <div>Monday: 11am — 9pm</div>
-                            <div>Tuesday: 11am — 9pm</div>
-                            <div>Wednesday: 11am — 9pm</div>
-                            <div>Thursday: 11am — 9pm</div>
-                            <div>Friday: 11am — 9pm</div>
-                            <div>Saturday: 11am — 9pm</div>
-                            <div>Sunday: 11am — 9pm</div>
+                            <div className="contact-subtext">Monday: 11am — 9pm</div>
+                            <div className="contact-subtext">Tuesday: 11am — 9pm</div>
+                            <div className="contact-subtext">Wednesday: 11am — 9pm</div>
+                            <div className="contact-subtext">Thursday: 11am — 9pm</div>
+                            <div className="contact-subtext">Friday: 11am — 9pm</div>
+                            <div className="contact-subtext">Saturday: 11am — 9pm</div>
+                            <div className="contact-subtext">Sunday: 11am — 9pm</div>
                         </div>
                         <div className="m-5"> <span className="h5">ADDRESS</span>
-                            <div>Blk 9 Lot 29 Matthew St. Juana 6 Brgy. San Francisco 4024 Biñan, Philippines</div>
+                            <div className="contact-subtext">Blk 9 Lot 29 Matthew St. Juana 6 Brgy. San Francisco 4024 Biñan, Philippines</div>
                         </div>
                     </div>
                     <div className="col order-2">
                         <div className="m-5"> <span className="h5"> ORDERS</span>
-                            <div>To change or cancel orders, please call us or contact us through Facebook messenger.</div>
+                            <div className="contact-subtext">To change or cancel orders, please call us or contact us through Facebook messenger.</div>
                         </div>
                         <div>
                         {/* {' '}<Map></Map> {' '} */}

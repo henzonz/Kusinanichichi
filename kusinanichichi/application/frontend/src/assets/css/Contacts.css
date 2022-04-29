@@ -1,6 +1,9 @@
 .contact-page {
     padding-top:7rem;
 }
+.contact-subtext{
+    font-size: 0.88rem;
+}
 .map-responsive{
     width: 70vw !important;
     max-width: 80ch !important;

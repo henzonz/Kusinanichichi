@@ -38,7 +38,7 @@ function Home() {
     <div className="homepage">
       <div className="text-center text-muted mb-5">** <u>Please order through our <a className="text-decoration-none" href="https://www.facebook.com/kusinanichichipromisesalasa" target="_blank">Facebook</a> page</u> **</div>
       <div>
-        <div className="text-center h3 our-best-seller-font mb-5">Our Best Sellers
+        <div className="text-center h3 our-best-seller-font mb-4">Our Best Sellers
         </div>
         <div className="row">
           <div className="mx-auto col">
@@ -48,7 +48,7 @@ function Home() {
           </div>
         </div>
         <div className="row">
-          <div className="col text-center mb-5 mt-3">
+          <div className="col text-center mb-5">
             <a className="btn btn-animation btn-color mt-4 text-dark"
               href="/silogmeals"
               role="button"
@@ -59,7 +59,7 @@ function Home() {
         </div>
       </div>
      
-      <div className="h3 text-center mt-5 mb-5 our-best-seller-font">Reviews</div>
+      <div className="h3 text-center mt-5 mb-4 our-best-seller-font">Reviews</div>
       <div className="row">
         <div className="mx-auto col">
           <div className="d-flex flex-row flex-wrap justify-content-around">
