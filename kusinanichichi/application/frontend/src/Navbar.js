@@ -55,7 +55,7 @@ function Navbar() {
                             <a className="nav-link px-2" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link px-2" href="/silogmeals">Menu</a>
+                            <a className="nav-link px-2" href="/Kusinanichichi/silogmeals">enu</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link px-2" href="/contact">Contact</a>
