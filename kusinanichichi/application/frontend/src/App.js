@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import SilogMeals from './FoodMenu/SilogMeals'
 import Home from './Home'
 import Navbar from './Navbar'
@@ -13,7 +13,7 @@ import Wings from './FoodMenu/Wings'
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         
         <Switch>
@@ -23,7 +23,7 @@ function App() {
           <Route path="/drinks">
             <Drinks />
           </Route>
-          <Route path="/Kusinanichichi/silogmeals">
+          <Route path="/silogmeals">
             <SilogMeals />
           </Route>
           <Route path="/wings">
@@ -36,7 +36,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
