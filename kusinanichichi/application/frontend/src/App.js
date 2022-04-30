@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, HashRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import SilogMeals from './FoodMenu/SilogMeals'
 import Home from './Home'
 import Navbar from './Navbar'
@@ -13,7 +13,7 @@ import Wings from './FoodMenu/Wings'
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar />
         
         <Switch>
@@ -36,7 +36,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
