@@ -4,6 +4,7 @@ import Logo from './assets/img/logo.jpg'
 import './assets/css/Nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom'
 
 
 
@@ -55,7 +56,7 @@ function Navbar() {
                             <a className="nav-link px-2" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link px-2" href="/silogmeals">enu</a>
+                            <Link to="/silogmeals" className="nav-link px-2">Menu</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link px-2" href="/contact">Contact</a>
