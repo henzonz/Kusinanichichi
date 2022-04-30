@@ -23,7 +23,7 @@ function App() {
           <Route path="/drinks">
             <Drinks />
           </Route>
-          <Route path="/silogmeals">
+          <Route path="/Kusinanichichi/silogmeals">
             <SilogMeals />
           </Route>
           <Route path="/wings">
