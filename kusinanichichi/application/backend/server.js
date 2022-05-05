@@ -3,6 +3,7 @@ const app = express();
 const mysql = require("mysql");
 const cors = require("cors");
 
+const port = process.env.PORT || 3001;
 
 
 const db = mysql.createConnection({
@@ -51,7 +52,12 @@ app.get("/wingsmenu", (req, res) => {
     });
 });
 
-
-app.listen(3001, () => {
-    console.log("running on port 3001");
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static('build'));
+    app.get('*', (req, res) => {
+        req.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+    })
+}
+app.listen(port, () => {
+    console.log("running on port:", port);
 });
