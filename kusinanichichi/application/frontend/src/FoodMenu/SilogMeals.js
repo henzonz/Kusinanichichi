@@ -9,7 +9,7 @@ function SilogMeals() {
     const [foodMenu, setFoodMenu] = useState([]);
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/silogmenu").then((response) => {
+        Axios.get("https://kusinanichichi-deployment.herokuapp.com/silogmenu").then((response) => {
             setFoodMenu(response.data);
         });
     });

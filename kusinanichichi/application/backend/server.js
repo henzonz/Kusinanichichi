@@ -4,14 +4,18 @@ const mysql = require("mysql");
 const cors = require("cors");
 
 const path = require('path');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database: "KusinanichichiDataBase",
+    // host: "localhost",
+    // user: "root",
+    // password: "password",
+    // database: "KusinanichichiDataBase",
+    host: "us-cdbr-east-05.cleardb.net",
+    user: "bb9b05e4d400a5",
+    password: "d885005f",
+    database: "heroku_ddebb7c29b1ce89",
 });
 app.use(cors());
 app.use(express.json());

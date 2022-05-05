@@ -11,7 +11,7 @@ function Drinks() {
     const [drinkMenu, setDrinkMenu] = useState([]);
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/drinkmenu").then((response) => {
+        Axios.get("https://kusinanichichi-deployment.herokuapp.com/drinkmenu").then((response) => {
             setDrinkMenu(response.data);
         });
     });

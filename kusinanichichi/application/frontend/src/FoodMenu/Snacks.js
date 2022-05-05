@@ -12,7 +12,7 @@ function Snacks() {
     const [snackMenu, setSnackMenu] = useState([]);
    
     useEffect(() => {
-        Axios.get("http://localhost:3001/snackmenu").then((response) => {
+        Axios.get("https://kusinanichichi-deployment.herokuapp.com/snackmenu").then((response) => {
             setSnackMenu(response.data);
         });
     });
