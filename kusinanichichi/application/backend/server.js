@@ -13,10 +13,12 @@ const db = mysql.createConnection({
     // password: "password",
     // database: "KusinanichichiDataBase",
     host: "us-cdbr-east-05.cleardb.net",
-    user: "bb9b05e4d400a5",
-    password: "d885005f",
-    database: "heroku_ddebb7c29b1ce89",
+    user: "b7a15ad9598b35",
+    password: "072064f5",
+    database: "heroku_9209a5d19fe2a2b",
 });
+
+// mysql://b7a15ad9598b35:072064f5@us-cdbr-east-05.cleardb.net/heroku_9209a5d19fe2a2b?reconnect=true
 app.use(cors());
 app.use(express.json());
 
@@ -57,12 +59,12 @@ app.get("/wingsmenu", (req, res) => {
     });
 });
 
-if(process.env.NODE_ENV === "production") {
-    app.use(express.static('build'));
-    app.get('*', (req, res) => {
-        req.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-    })
-}
+// if(process.env.NODE_ENV === "production") {
+//     app.use(express.static('build'));
+//     app.get('*', (req, res) => {
+//         req.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+//     })
+// }
 app.listen(port, () => {
     console.log("running on port:", port);
 });

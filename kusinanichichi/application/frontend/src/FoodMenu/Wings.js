@@ -10,7 +10,7 @@ function Wings() {
     const [wingsMenu, setWingsMenu] = useState([]);
 
     useEffect(() => {
-        Axios.get("https://kusinanichichi-deployment.herokuapp.com/wingsmenu").then((response) => {
+        Axios.get("https://kusinanichichi.herokuapp.com/wingsmenu").then((response) => {
             setWingsMenu(response.data);
         });
     });
