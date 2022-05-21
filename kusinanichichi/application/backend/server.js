@@ -58,7 +58,10 @@ app.get("/wingsmenu", (req, res) => {
         }
     });
 });
-
+db.connect((err) => {
+    if (err) throw err;
+    console.log('Successfully connected to the DB!');
+});
 app.listen(port, () => {
     console.log("running on port:", port);
 });
