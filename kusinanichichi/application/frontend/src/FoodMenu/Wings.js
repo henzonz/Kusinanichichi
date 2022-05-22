@@ -13,7 +13,7 @@ function Wings() {
         Axios.get("https://kusinanichichi.herokuapp.com/wingsmenu").then((response) => {
             setWingsMenu(response.data);
         });
-    });
+    }, []);
 
     return (
         <div className="menupage container">

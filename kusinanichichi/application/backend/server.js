@@ -7,7 +7,7 @@ const path = require('path');
 const port = process.env.PORT || 8080;
 
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     // host: "localhost",
     // user: "root",
     // password: "password",

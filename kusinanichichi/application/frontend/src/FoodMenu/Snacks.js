@@ -15,7 +15,7 @@ function Snacks() {
         Axios.get("https://kusinanichichi.herokuapp.com/snackmenu").then((response) => {
             setSnackMenu(response.data);
         });
-    });
+    }, []);
     return (
         <div className="menupage container">
             <div className="row">
