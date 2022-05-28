@@ -7,6 +7,9 @@
     text-shadow: 2px 1px rgba(128, 128, 128, 0.656) !important;
     -webkit-text-fill-color: #f78254b6 !important;
 }
+.reviews-margin__top{
+    margin-top: 8em !important;
+}
 .border-thickness{
     border-width: 0.3ch !important;
 }

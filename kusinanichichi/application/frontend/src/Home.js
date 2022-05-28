@@ -59,7 +59,7 @@ function Home() {
         </div>
       </div>
      
-      <div className="h3 text-center mt-5 mb-4 our-best-seller-font">Reviews</div>
+      <div className="h3 text-center mt-5 mb-4 reviews-margin__top our-best-seller-font">Reviews</div>
       <div className="row">
         <div className="mx-auto col">
           <div className="d-flex flex-row flex-wrap justify-content-around">
