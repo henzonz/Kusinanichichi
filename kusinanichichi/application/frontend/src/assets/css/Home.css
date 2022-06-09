@@ -2,19 +2,26 @@
 .homepage{
     padding-top: 7rem;
 }
+.horizontal-line{
+    border-bottom: 0.9px solid #F78154;
+    height: 20px;
+}
 .our-best-seller-font{
     letter-spacing: 0.15rem;
     text-shadow: 2px 1px rgba(128, 128, 128, 0.656) !important;
     -webkit-text-fill-color: #f78254b6 !important;
+    display: table;
+    margin: 0 auto;
+    background-color: white;
 }
 .reviews-margin__top{
     margin-top: 8em !important;
 }
 .border-thickness{
-    border-width: 0.3ch !important;
+    border-width: 1px !important;
 }
 .btn-color{
-    border: 0.1rem solid !important;
+    border: 0.9px solid !important;
     border-color: #F78154 !important;
     background-color: #f7825430;
 }

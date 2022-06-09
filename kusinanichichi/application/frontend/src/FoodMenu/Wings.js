@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import Axios from 'axios';
-import '../assets/css/Menu.css'
-import '../assets/css/bootstrap.min.css'
-
+import '../assets/css/Menu.css';
+import '../assets/css/bootstrap.min.css';
+import GridLoader from "react-spinners/GridLoader"
 
 
 function Wings() {
 
     const [wingsMenu, setWingsMenu] = useState([]);
+    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         Axios.get("https://kusinanichichi.herokuapp.com/wingsmenu").then((response) => {
             setWingsMenu(response.data);
+            setLoaded(true);
         });
     }, []);
 
@@ -24,23 +26,29 @@ function Wings() {
                     <a className="btn btn-animation btn-bg border-orange mt-3 menu_writing" href="/drinks" role="button">Drinks</a>
                     <a className="btn btn-animation btn-bg border-orange mt-3 menu_writing current" href="/wings" role="button">Wings</a>
                 </div>
-                <div className="mx-auto col mt-2 mr-4">
+                {loaded ? <div className="mx-auto col mt-2 mr-4">
                     <div className="d-flex row flex-wrap justify-content-around text-center">
-                    {wingsMenu.map((item, i) => {
-                        var wingsPriceInDecimals = parseFloat(item.wingsPrice).toFixed(2);
-                        return (
-                            <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
-                                <img className="food-img card-img-top m-auto rounded border-orange" src={item.wingsImgPath} style={{ height: '190px', width: '235px' }} alt="" />
-                                <div className="card-body">
-                                    <div className="card-title menu_writing"> 
-                                     &#8369;{wingsPriceInDecimals} &nbsp; — &nbsp;{item.wingsMenuName}
+                        {wingsMenu.map((item, i) => {
+                            var wingsPriceInDecimals = parseFloat(item.wingsPrice).toFixed(2);
+                            return (
+                                <div className="card col-lg-5 col-md-6 border-0 food_cards m-2">
+                                    <img className="food-img card-img-top m-auto rounded border-orange" src={item.wingsImgPath} style={{ height: '190px', width: '235px' }} alt="" />
+                                    <div className="card-body">
+                                        <div className="card-title menu_writing">
+                                            &#8369;{wingsPriceInDecimals} &nbsp; — &nbsp;{item.wingsMenuName}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
                     </div>
                 </div>
+                    :
+                    <div className="loader">
+                        <GridLoader color="#F78154" margin={1} size={7}></GridLoader>
+                        <span className="h4"> Loading menu </span>
+                        <GridLoader color="#F78154" margin={1} size={7}></GridLoader>
+                    </div>}
             </div>
         </div>
     );

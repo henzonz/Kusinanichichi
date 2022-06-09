@@ -2,7 +2,7 @@
     padding: 0 1rem !important;
 }
 .nav_border{
-    border-color: #F78154 !important;
+    border-bottom: 1px solid #F78154 !important;
 }
 #navigation .nav-link{
     color: black !important;

@@ -6,7 +6,7 @@
     z-index:1;
 }
 .border-orange{
-    border: 0.1rem solid !important;
+    border: 0.9px solid !important;
     border-color: #F78154 !important;
 }
 .btn-bg{
@@ -24,5 +24,9 @@
 .menu_writing{
     color: black !important;
     font-size: 0.945rem !important;
+}
+.loader{
+    margin: 0 auto;
+    margin-top: 4em;
 }
 
