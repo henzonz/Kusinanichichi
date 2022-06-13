@@ -6,6 +6,9 @@
     border-bottom: 0.9px solid #F78154;
     height: 20px;
 }
+.review-section__top-margin{
+    margin-top: 15rem;
+}
 .our-best-seller-font{
     letter-spacing: 0.15rem;
     text-shadow: 2px 1px rgba(128, 128, 128, 0.656) !important;

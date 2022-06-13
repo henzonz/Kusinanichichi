@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import './assets/css/bootstrap.min.css'
-import Logo from './assets/img/logo.jpg'
-import './assets/css/Nav.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import '../assets/css/bootstrap.min.css'
+import Logo from '../assets/img/logo.jpg'
+import '../assets/css/Nav.css'
+
 
 
 
@@ -12,25 +11,14 @@ function Navbar() {
     const [showMenu, setShowMenu] = useState(false)
     const menuBtn = document.querySelector('.nav-menu-btn,.mobile-nav__position');
 
-
-    let menuOpen = false;
-
-
-
     let menu
-
     if (showMenu) {
         menuBtn.classList.toggle('open');
-
         menu =
-
             <nav className="mobile-nav__background navbar navbar-light border-bottom shadow-lg">
-
                 <ul className="navbar-nav d-flex flex-column pt-4 mx-auto">
                     <li className="nav-item highlight"><a href="/" className="nav-link mobile-nav-link__texts">Home</a></li>
-
                     <li className="nav-item highlight mt-5"><a href="/silogmeals" className="nav-link mobile-nav-link__texts">Menu</a></li>
-
                     <li className="nav-item highlight mt-5 mb-4"><a href="/contact" className="nav-link mobile-nav-link__texts">Contact</a></li>
                 </ul>
 
@@ -69,7 +57,6 @@ function Navbar() {
                 <div className="mobile-nav">
 
                     <div className="mobile-nav__position">
-
                         {menu}
                     </div>
                     <div className={`nav-menu-btn mr-4 shadow-lg ml-auto ${showMenu ? "open" : ""}`} onClick={() => setShowMenu(!showMenu)}>

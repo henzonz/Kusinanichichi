@@ -12,6 +12,9 @@
 .btn-bg{
     background-color: #f7825430;
 }
+.food-category{
+    width: 100% !important;
+}
  a.current{
     background-color:#F78154 !important;
 }

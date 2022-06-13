@@ -1,6 +1,5 @@
-import FamPic from './assets/img/fampic.jpeg'
-import './assets/css/Contacts.css'
-// import Map from '../src/Map'
+import '../assets/css/Contacts.css'
+
 
 function Contacts() {
     return (
@@ -34,9 +33,7 @@ function Contacts() {
                             <div className="contact-subtext">To change or cancel orders, please call us or contact us through Facebook messenger.</div>
                         </div>
                         <div>
-                        {/* {' '}<Map></Map> {' '} */}
-                        <iframe className="map-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d966.6405260578687!2d121.05463048810928!3d14.27874099937245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x683bca8788172b54!2zMTTCsDE2JzQzLjUiTiAxMjHCsDAzJzE4LjYiRQ!5e0!3m2!1sen!2sus!4v1649299982145!5m2!1sen!2sus"></iframe>
-
+                            <iframe title="kusinanichichimap" className="map-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d966.6405260578687!2d121.05463048810928!3d14.27874099937245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x683bca8788172b54!2zMTTCsDE2JzQzLjUiTiAxMjHCsDAzJzE4LjYiRQ!5e0!3m2!1sen!2sus!4v1649299982145!5m2!1sen!2sus"></iframe>
                         </div>
                     </div>
                 </div>
