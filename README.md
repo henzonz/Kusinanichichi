@@ -13,3 +13,9 @@ To run:
 8. Run the command: npm i
 9. Run the command: npm start
 10. The website should start up in your browser.
+
+
+## Software Architecture Diagram
+<picture>
+  <img src="kusinanichichi/application/frontend/src/assets/img/diagram.JPG" width="650" height="400" title="hover text">
+</picture>
