@@ -17,5 +17,5 @@ To run:
 
 ## Software Architecture Diagram
 <picture>
-  <img src="kusinanichichi/application/frontend/src/assets/img/diagram.JPG" width="1150" height="450" title="hover text">
+  <img src="kusinanichichi/application/frontend/src/assets/img/diagram.JPG" width="1300" height="450" title="hover text">
 </picture>
